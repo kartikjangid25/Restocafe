@@ -410,17 +410,18 @@ h1, h2, h3, h4 {
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* clips plate on mobile to prevent horizontal scroll */
   width: 100%;
   max-width: 100%;
 }
 
-/* On desktop, restore the fixed full-screen height */
+/* On desktop, restore the fixed full-screen height and allow plate to extend right */
 @media (min-width: 1024px) {
   .hero {
     min-height: 100vh;
     flex-direction: row;
     max-width: 1440px;
+    overflow: visible; /* let the plate bleed right without clipping bottom */
     padding: calc(var(--nav-height) + 2rem) var(--section-pad-x) var(--section-pad-y);
   }
 }
@@ -1080,6 +1081,8 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid rgba(201, 163, 95, 0.2);
   display: flex;
   white-space: nowrap;
+  position: relative;
+  z-index: 10; /* Ensures marquee sits on top of the hero plate's bleed */
 }
 
 .marquee__content {
