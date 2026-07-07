@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restocaféé | Philosophy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@300;400&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="header js-header is-scrolled">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">Restocaféé</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="philosophy.html" class="nav__link">Philosophy</a></li>
+          <li class="nav__item"><a href="menu.html" class="nav__link">Menu</a></li>
+          <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--outline nav__cta">Book a Table</a>
+      </nav>
+      <button class="hamburger js-hamburger" aria-label="Toggle Navigation">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer js-drawer">
+    <div class="drawer__overlay js-drawer-overlay"></div>
+    <div class="drawer__content">
+      <button class="drawer__close js-drawer-close" aria-label="Close Navigation">&times;</button>
+      <ul class="drawer__nav">
+        <li><a href="index.html" class="drawer__link js-drawer-link">Home</a></li>
+        <li><a href="philosophy.html" class="drawer__link js-drawer-link">Philosophy</a></li>
+        <li><a href="menu.html" class="drawer__link js-drawer-link">Menu</a></li>
+        <li><a href="gallery.html" class="drawer__link js-drawer-link">Gallery</a></li>
+        <li><a href="contact.html" class="drawer__link js-drawer-link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--outline drawer__cta">Book a Table</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="philosophy"
+      style="min-height: 100vh; padding-top: calc(var(--nav-height) + 4rem); display: flex; align-items: center;">
+      <div class="philosophy__container grid-2-col" style="width: 100%;">
+        <div class="philosophy__visual js-animate">
+          <img src="images/philosophy_plate_1783453283653.png" alt="Exquisite culinary creation"
+            class="philosophy__plate">
+        </div>
+
+        <div class="philosophy__text js-animate">
+          <h2 class="section-header__title" style="text-align: left;">Our Philosophy</h2>
+          <p class="section-header__text" style="text-align: left; margin-bottom: 2rem;">Rooted in tradition, inspired
+            by the earth.</p>
+          <div class="divider" style="justify-content: flex-start; margin-bottom: 2rem;">
+            <span class="divider__line"></span>
+            <span class="divider__diamond"></span>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8;">At
+            Restocaféé, we believe that dining is an art form. Every dish tells a story of our heritage, crafted with
+            the finest seasonal ingredients sourced locally.</p>
+          <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.1rem; line-height: 1.8;">Our chefs
+            pour passion into every plate, marrying classic French technique with modern sensibilities. We seek to
+            capture the fleeting beauty of nature and present it in an unforgettable culinary moment.</p>
+          <a href="menu.html" class="btn btn--outline">View Our Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy-roots"
+      style="padding: 0 var(--section-pad-x) var(--section-pad-y); max-width: 1440px; margin: 0 auto;">
+      <div class="grid-2-col" style="align-items: center;">
+
+        <div class="philosophy__text js-animate" style="order: 2;">
+          <h2 class="section-header__title" style="text-align: left; font-size: 2.5rem;">Our Roots</h2>
+          <div class="divider" style="justify-content: flex-start; margin-bottom: 2rem; margin-top: 1rem;">
+            <span class="divider__line"></span>
+            <span class="divider__diamond"></span>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8;">
+            What began as a humble vision in the countryside has blossomed into a sanctuary for gastronomy. We trace our
+            roots back to the simple joy of gathering around a table.
+          </p>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8;">
+            By partnering exclusively with sustainable farms and artisan foragers, we ensure that every ingredient not
+            only tastes exceptional but honors the earth it came from.
+          </p>
+        </div>
+
+        <div class="philosophy__visual js-animate" style="order: 1;">
+          <img src="images/philosophy_roots_1783453293709.png" alt="Chef preparing ingredients"
+            style="width: 100%; max-width: 500px; aspect-ratio: 3/4; object-fit: cover; border-radius: 4px; box-shadow: 0 15px 40px rgba(0,0,0,0.4);">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container grid-4-col">
+      <div class="footer__col">
+        <a href="index.html" class="footer__logo">Restocaféé</a>
+        <address class="footer__address">
+          Taj Mahal Palace Heritage Wing<br>
+          Apollo Bunder, Mumbai 400001<br>
+          +91 22 6665 3366
+        </address>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="philosophy.html">Philosophy</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Reservations</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+        </div>
+        <p class="footer__tagline">Culinary excellence,<br>forged in passion.</p>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__heading">Newsletter</h4>
+        <form class="newsletter js-newsletter">
+          <div class="newsletter__input-group">
+            <input type="email" class="newsletter__input js-email" placeholder="Email Address" required>
+            <button type="submit" class="btn btn--solid newsletter__btn">Subscribe</button>
+          </div>
+          <p class="newsletter__message js-message"></p>
+        </form>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Restocaféé. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
