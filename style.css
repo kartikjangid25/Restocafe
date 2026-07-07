@@ -428,7 +428,7 @@ h1, h2, h3, h4 {
 
 .hero__title-primary {
   font-family: var(--font-serif);
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -437,7 +437,7 @@ h1, h2, h3, h4 {
 
 .hero__title-secondary {
   font-family: var(--font-script);
-  font-size: 5rem;
+  font-size: 4rem;
   background: linear-gradient(135deg, #f4efe2 0%, #c9a35f 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -508,6 +508,15 @@ h1, h2, h3, h4 {
 }
 
 @media (min-width: 768px) {
+  .hero__title-primary {
+    font-size: 3rem;
+  }
+  .hero__title-secondary {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .hero__title-primary {
     font-size: 4rem;
   }
@@ -586,7 +595,8 @@ h1, h2, h3, h4 {
     top: auto;
     transform: none;
     width: 100%;
-    margin-top: 3rem;
+    max-width: 500px;
+    margin: 3rem auto 0;
   }
 }
 
@@ -775,7 +785,7 @@ h1, h2, h3, h4 {
 }
 
 .menu-item {
-  padding: 3rem 2.5rem;
+  padding: 1.5rem 1.25rem;
   border-radius: 16px;
   background: rgba(28, 46, 34, 0.5);
   border: 1px solid rgba(201, 163, 95, 0.15);
@@ -793,10 +803,19 @@ h1, h2, h3, h4 {
 
 .menu-item__title {
   font-family: var(--font-script);
-  font-size: 4.5rem;
+  font-size: 3rem;
   color: var(--accent-gold);
   margin-bottom: 0.5rem;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .menu-item {
+    padding: 3rem 2.5rem;
+  }
+  .menu-item__title {
+    font-size: 4.5rem;
+  }
 }
 
 .menu-item__desc {
@@ -1070,7 +1089,7 @@ h1, h2, h3, h4 {
 
 .quote__text {
   font-family: var(--font-serif);
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--text-cream);
   line-height: 1.4;
   margin-bottom: 2rem;
